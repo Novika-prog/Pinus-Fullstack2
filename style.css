@@ -1,0 +1,141 @@
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 50px;
+    block-size: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-inline-end: 15px;
+    color: #4caf50;
+    font-size: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .user-status {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #d4f8d4;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  block-size: 100vh;
+  overflow-x: hidden;
+}
+
+.chat-container {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-inline-size: 100%;
+}
+
+.chat-container::-webkit-scrollbar {
+  inline-size: 10px;
+}
+
+.chat-container li {
+  max-inline-size: 70%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.chat-container .user {
+  background-color: #4caf50;
+  color: #ffffff;
+  align-self: flex-end;
+  text-align: end;
+}
+
+.chat-container .chat.bubble {
+  background-color: #e0e0e0;
+  color: #000000;
+  align-self: flex-start;
+  text-align: start;
+}
+
+.input-container {
+  background-color: #ffffff;
+  padding: 10px;
+  border-block-start: 1px solid #e0e0e0;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  inline-size: 100%;
+  max-inline-size: 800px;
+  box-sizing: border-box;
+}
+
+form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+form input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
